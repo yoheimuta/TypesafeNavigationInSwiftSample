@@ -16,10 +16,14 @@ extension ViewControllerFactory: AuthViewControllerFactories {
     }
     
     func makeSignup() -> (UIViewController, Transitioning) {
-        return (UIViewController(), ModalTransition())
+        return (UIViewController(), NavigationTransition())
     }
     
     func makeLogin() -> (UIViewController, Transitioning) {
-        return (UIViewController(), ModalTransition())
+        return (UIViewController(), NavigationTransition())
+    }
+    
+    func makeEnd() -> Transitioning {
+        return ModalTransition()
     }
 }

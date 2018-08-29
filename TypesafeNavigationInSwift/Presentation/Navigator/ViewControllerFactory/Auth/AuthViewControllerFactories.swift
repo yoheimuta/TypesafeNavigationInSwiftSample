@@ -12,4 +12,5 @@ protocol AuthViewControllerFactories {
     func makeInitial() -> (UIViewController, Transitioning)
     func makeSignup() -> (UIViewController, Transitioning)
     func makeLogin() -> (UIViewController, Transitioning)
+    func makeEnd() -> Transitioning
 }

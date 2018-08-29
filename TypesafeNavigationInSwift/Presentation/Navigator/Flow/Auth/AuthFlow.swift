@@ -38,3 +38,10 @@ extension AuthFlow: AuthFlowInitials {
         transition.open(src, dst)
     }
 }
+
+extension AuthFlow: AuthFlowSignups, AuthFlowLogins {
+    func toEnd(_ src: UIViewController) {
+        let transition = factory.makeEnd()
+        transition.close(src)
+    }
+}
