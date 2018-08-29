@@ -14,7 +14,7 @@ struct AuthFlow {
         self.factory = factory
     }
 
-    static func initialState(factory: AuthViewControllerFactories)
+    static func initialState(_ factory: AuthViewControllerFactories)
         -> AuthFlowRoots {
         return AuthFlow(factory)
     }

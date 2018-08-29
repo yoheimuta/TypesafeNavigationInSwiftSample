@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+final class Navigator {
+    private let factory: ViewControllerFactory
+    init(_ factory: ViewControllerFactory) {
+        self.factory = factory
+    }
+    
+    func startAuthFlow() -> AuthFlowRoots {
+        return AuthFlow.initialState(factory)
+    }
+}
