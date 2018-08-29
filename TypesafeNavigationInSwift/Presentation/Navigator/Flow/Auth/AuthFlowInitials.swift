@@ -9,6 +9,6 @@
 import UIKit
 
 protocol AuthFlowInitials {
-    func toMemberSignup(_ src: UIViewController)
-    func toMemberLogin(_ src: UIViewController)
+    func toSignup(_ src: UIViewController)
+    func toLogin(_ src: UIViewController)
 }

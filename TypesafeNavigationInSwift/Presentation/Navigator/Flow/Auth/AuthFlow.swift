@@ -28,13 +28,13 @@ extension AuthFlow: AuthFlowRoots {
 }
 
 extension AuthFlow: AuthFlowInitials {
-    func toMemberSignup(_ src: UIViewController) {
-        let (dst, transition) = factory.makeMemberSignup()
+    func toSignup(_ src: UIViewController) {
+        let (dst, transition) = factory.makeSignup()
         transition.open(src, dst)
     }
     
-    func toMemberLogin(_ src: UIViewController) {
-        let (dst, transition) = factory.makeMemberLogin()
+    func toLogin(_ src: UIViewController) {
+        let (dst, transition) = factory.makeLogin()
         transition.open(src, dst)
     }
 }

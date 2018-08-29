@@ -159,7 +159,7 @@
 		FF6A6EE521369BB6009E6706 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FF6A6EE721369C1C009E6706 /* AuthMemberSignup */,
+				FF6A6EE721369C1C009E6706 /* AuthSignup */,
 				FF6A6EE621369C08009E6706 /* AuthInitial */,
 			);
 			path = Auth;
@@ -172,11 +172,11 @@
 			path = AuthInitial;
 			sourceTree = "<group>";
 		};
-		FF6A6EE721369C1C009E6706 /* AuthMemberSignup */ = {
+		FF6A6EE721369C1C009E6706 /* AuthSignup */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = AuthMemberSignup;
+			path = AuthSignup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
