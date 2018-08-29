@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct NavigationTransition: Transition {
+struct NavigationTransition: Transitioning {
     func open(_ src: UIViewController, _ dst: UIViewController) {
         src.navigationController?.pushViewController(dst, animated: true)
     }

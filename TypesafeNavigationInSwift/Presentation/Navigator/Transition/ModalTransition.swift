@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ModalTransition: Transition {
+struct ModalTransition: Transitioning {
     func open(_ src: UIViewController, _ dst: UIViewController) {
         src.present(dst, animated: true, completion: nil)
     }

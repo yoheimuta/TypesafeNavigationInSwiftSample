@@ -1,5 +1,5 @@
 //
-//  Transition.swift
+//  Transitioning.swift
 //  TypesafeNavigationInSwift
 //
 //  Created by YOSHIMUTA YOHEI on 2018/08/29.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-public protocol Transition: OpenTransition, CloseTransition {
+public protocol Transitioning: OpenTransitioning, CloseTransitioning {
 }
 
-public protocol OpenTransition {
+public protocol OpenTransitioning {
     func open(_ src: UIViewController, _ dst: UIViewController)
 }
 
-public protocol CloseTransition {
+public protocol CloseTransitioning {
     func close(_ vc: UIViewController)
 }
