@@ -1,5 +1,5 @@
 //
-//  LoginFlow.swift
+//  AuthFlow.swift
 //  TypesafeNavigationInSwift
 //
 //  Created by YOSHIMUTA YOHEI on 2018/08/29.
@@ -8,26 +8,26 @@
 
 import UIKit
 
-struct LoginFlow {
-    private let factory: LoginViewControllerFactories
-    private init(_ factory: LoginViewControllerFactories) {
+struct AuthFlow {
+    private let factory: AuthViewControllerFactories
+    private init(_ factory: AuthViewControllerFactories) {
         self.factory = factory
     }
 
-    static func initialState(factory: LoginViewControllerFactories)
-        -> LoginFlowRoots {
-        return LoginFlow(factory)
+    static func initialState(factory: AuthViewControllerFactories)
+        -> AuthFlowRoots {
+        return AuthFlow(factory)
     }
 }
 
-extension LoginFlow: LoginFlowRoots {
+extension AuthFlow: AuthFlowRoots {
     func toInitial(_ src: UIViewController) {
         let (dst, transition) = factory.makeInitial()
         transition.open(src, dst)
     }
 }
 
-extension LoginFlow: LoginFlowInitials {
+extension AuthFlow: AuthFlowInitials {
     func toMemberSignup(_ src: UIViewController) {
         let (dst, transition) = factory.makeMemberSignup()
         transition.open(src, dst)

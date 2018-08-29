@@ -1,5 +1,5 @@
 //
-//  LoginViewControllerFactories.swift
+//  AuthViewControllerFactories.swift
 //  TypesafeNavigationInSwift
 //
 //  Created by YOSHIMUTA YOHEI on 2018/08/29.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginViewControllerFactories {
+protocol AuthViewControllerFactories {
     func makeInitial() -> (UIViewController, Transitioning)
     func makeMemberSignup() -> (UIViewController, Transitioning)
     func makeMemberLogin() -> (UIViewController, Transitioning)

@@ -10,7 +10,7 @@ import UIKit
 
 final class ViewControllerFactory {}
 
-extension ViewControllerFactory: LoginViewControllerFactories {
+extension ViewControllerFactory: AuthViewControllerFactories {
     func makeInitial() -> (UIViewController, Transitioning) {
         return (UIViewController(), ModalTransition())
     }

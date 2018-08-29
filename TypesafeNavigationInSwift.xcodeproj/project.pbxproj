@@ -15,11 +15,12 @@
 		FF6A6ED0213692BA009E6706 /* Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ECF213692BA009E6706 /* Transitioning.swift */; };
 		FF6A6ED2213692CF009E6706 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED1213692CF009E6706 /* ModalTransition.swift */; };
 		FF6A6ED4213692DA009E6706 /* NavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED3213692DA009E6706 /* NavigationTransition.swift */; };
-		FF6A6ED821369481009E6706 /* LoginViewControllerFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED721369481009E6706 /* LoginViewControllerFactories.swift */; };
+		FF6A6ED821369481009E6706 /* AuthViewControllerFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED721369481009E6706 /* AuthViewControllerFactories.swift */; };
 		FF6A6EDA213694DC009E6706 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED9213694DC009E6706 /* ViewControllerFactory.swift */; };
-		FF6A6EDE213696AA009E6706 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EDD213696AA009E6706 /* LoginFlow.swift */; };
-		FF6A6EE221369AF8009E6706 /* LoginFlowRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE121369AF8009E6706 /* LoginFlowRoots.swift */; };
-		FF6A6EE421369B0A009E6706 /* LoginFlowInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE321369B0A009E6706 /* LoginFlowInitials.swift */; };
+		FF6A6EDE213696AA009E6706 /* AuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EDD213696AA009E6706 /* AuthFlow.swift */; };
+		FF6A6EE221369AF8009E6706 /* AuthFlowRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE121369AF8009E6706 /* AuthFlowRoots.swift */; };
+		FF6A6EE421369B0A009E6706 /* AuthFlowInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE321369B0A009E6706 /* AuthFlowInitials.swift */; };
+		FF6A6EE921369CCD009E6706 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE821369CCD009E6706 /* Navigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +34,12 @@
 		FF6A6ECF213692BA009E6706 /* Transitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitioning.swift; sourceTree = "<group>"; };
 		FF6A6ED1213692CF009E6706 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 		FF6A6ED3213692DA009E6706 /* NavigationTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransition.swift; sourceTree = "<group>"; };
-		FF6A6ED721369481009E6706 /* LoginViewControllerFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerFactories.swift; sourceTree = "<group>"; };
+		FF6A6ED721369481009E6706 /* AuthViewControllerFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerFactories.swift; sourceTree = "<group>"; };
 		FF6A6ED9213694DC009E6706 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
-		FF6A6EDD213696AA009E6706 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
-		FF6A6EE121369AF8009E6706 /* LoginFlowRoots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowRoots.swift; sourceTree = "<group>"; };
-		FF6A6EE321369B0A009E6706 /* LoginFlowInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlowInitials.swift; sourceTree = "<group>"; };
+		FF6A6EDD213696AA009E6706 /* AuthFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlow.swift; sourceTree = "<group>"; };
+		FF6A6EE121369AF8009E6706 /* AuthFlowRoots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowRoots.swift; sourceTree = "<group>"; };
+		FF6A6EE321369B0A009E6706 /* AuthFlowInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowInitials.swift; sourceTree = "<group>"; };
+		FF6A6EE821369CCD009E6706 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,6 @@
 			children = (
 				FF6A6EC921369232009E6706 /* Presentation */,
 				FF6A6EB7213691E1009E6706 /* AppDelegate.swift */,
-				FF6A6EBB213691E1009E6706 /* Main.storyboard */,
 				FF6A6EBE213691E3009E6706 /* Assets.xcassets */,
 				FF6A6EC0213691E3009E6706 /* LaunchScreen.storyboard */,
 				FF6A6EC3213691E3009E6706 /* Info.plist */,
@@ -93,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				FF6A6EB9213691E1009E6706 /* ViewController.swift */,
+				FF6A6EBB213691E1009E6706 /* Main.storyboard */,
+				FF6A6EE521369BB6009E6706 /* Auth */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 				FF6A6ECE21369274009E6706 /* ViewControllerFactory */,
 				FF6A6ECD2136926E009E6706 /* Flow */,
 				FF6A6ECC21369260009E6706 /* Transition */,
+				FF6A6EE821369CCD009E6706 /* Navigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -120,7 +124,7 @@
 		FF6A6ECD2136926E009E6706 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				FF6A6ED621369336009E6706 /* Login */,
+				FF6A6ED621369336009E6706 /* Auth */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -129,27 +133,50 @@
 			isa = PBXGroup;
 			children = (
 				FF6A6ED9213694DC009E6706 /* ViewControllerFactory.swift */,
-				FF6A6ED521369320009E6706 /* Login */,
+				FF6A6ED521369320009E6706 /* Auth */,
 			);
 			path = ViewControllerFactory;
 			sourceTree = "<group>";
 		};
-		FF6A6ED521369320009E6706 /* Login */ = {
+		FF6A6ED521369320009E6706 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FF6A6ED721369481009E6706 /* LoginViewControllerFactories.swift */,
+				FF6A6ED721369481009E6706 /* AuthViewControllerFactories.swift */,
 			);
-			path = Login;
+			path = Auth;
 			sourceTree = "<group>";
 		};
-		FF6A6ED621369336009E6706 /* Login */ = {
+		FF6A6ED621369336009E6706 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				FF6A6EDD213696AA009E6706 /* LoginFlow.swift */,
-				FF6A6EE121369AF8009E6706 /* LoginFlowRoots.swift */,
-				FF6A6EE321369B0A009E6706 /* LoginFlowInitials.swift */,
+				FF6A6EDD213696AA009E6706 /* AuthFlow.swift */,
+				FF6A6EE121369AF8009E6706 /* AuthFlowRoots.swift */,
+				FF6A6EE321369B0A009E6706 /* AuthFlowInitials.swift */,
 			);
-			path = Login;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FF6A6EE521369BB6009E6706 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FF6A6EE721369C1C009E6706 /* AuthMemberSignup */,
+				FF6A6EE621369C08009E6706 /* AuthInitial */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FF6A6EE621369C08009E6706 /* AuthInitial */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthInitial;
+			sourceTree = "<group>";
+		};
+		FF6A6EE721369C1C009E6706 /* AuthMemberSignup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthMemberSignup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,14 +252,15 @@
 			files = (
 				FF6A6ED4213692DA009E6706 /* NavigationTransition.swift in Sources */,
 				FF6A6EDA213694DC009E6706 /* ViewControllerFactory.swift in Sources */,
-				FF6A6ED821369481009E6706 /* LoginViewControllerFactories.swift in Sources */,
-				FF6A6EE221369AF8009E6706 /* LoginFlowRoots.swift in Sources */,
+				FF6A6ED821369481009E6706 /* AuthViewControllerFactories.swift in Sources */,
+				FF6A6EE221369AF8009E6706 /* AuthFlowRoots.swift in Sources */,
 				FF6A6ED2213692CF009E6706 /* ModalTransition.swift in Sources */,
+				FF6A6EE921369CCD009E6706 /* Navigator.swift in Sources */,
 				FF6A6ED0213692BA009E6706 /* Transitioning.swift in Sources */,
 				FF6A6EBA213691E1009E6706 /* ViewController.swift in Sources */,
 				FF6A6EB8213691E1009E6706 /* AppDelegate.swift in Sources */,
-				FF6A6EE421369B0A009E6706 /* LoginFlowInitials.swift in Sources */,
-				FF6A6EDE213696AA009E6706 /* LoginFlow.swift in Sources */,
+				FF6A6EE421369B0A009E6706 /* AuthFlowInitials.swift in Sources */,
+				FF6A6EDE213696AA009E6706 /* AuthFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
