@@ -9,39 +9,46 @@
 import UIKit
 
 struct AuthFlow {
-    private let factory: AuthViewControllerFactories
-    private init(_ factory: AuthViewControllerFactories) {
-        self.factory = factory
+    typealias CompleteCallback = () -> ()
+    struct Dependency {
+        let factory: AuthViewControllerFactories
+        let complete: CompleteCallback
+    }
+    
+    private let dep: Dependency
+    private init(_ dep: Dependency) {
+        self.dep = dep
     }
 
-    static func initialState(_ factory: AuthViewControllerFactories)
-        -> AuthFlowRoots {
-        return AuthFlow(factory)
+    static func initialState(dep: Dependency) -> AuthFlowRoots {
+        return AuthFlow(dep)
     }
 }
 
 extension AuthFlow: AuthFlowRoots {
     func toInitial(_ src: UIViewController) {
-        let (dst, transition) = factory.makeInitial(self)
+        let (dst, transition) = dep.factory.makeInitial(self)
         transition.open(src, dst)
     }
 }
 
 extension AuthFlow: AuthFlowInitials {
     func toSignup(_ src: UIViewController) {
-        let (dst, transition) = factory.makeSignup(self)
+        let (dst, transition) = dep.factory.makeSignup(self)
         transition.open(src, dst)
     }
     
     func toLogin(_ src: UIViewController) {
-        let (dst, transition) = factory.makeLogin(self)
+        let (dst, transition) = dep.factory.makeLogin(self)
         transition.open(src, dst)
     }
 }
 
 extension AuthFlow: AuthFlowSignups, AuthFlowLogins {
     func toEnd(_ src: UIViewController) {
-        let transition = factory.makeEnd()
+        let transition = dep.factory.makeEnd()
         transition.close(src)
+        
+        dep.complete()
     }
 }

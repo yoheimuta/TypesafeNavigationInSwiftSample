@@ -16,8 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let vcFactory = ViewControllerFactory()
-        let authFlow = AuthFlow.initialState(vcFactory)
-        
+        let navigator = Navigator(vcFactory)
+        let authFlow = navigator.startAuthFlow {
+            print("complete auth flow")
+        }
+
         let initialVC = ViewController.make(dep: .init(
             flow: authFlow
         ))
