@@ -14,6 +14,7 @@
 		FF31C7042144FA490057F715 /* AuthSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C7032144FA490057F715 /* AuthSignupViewController.swift */; };
 		FF31C7082144FC3D0057F715 /* AuthLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF31C7072144FC3D0057F715 /* AuthLogin.storyboard */; };
 		FF31C70A2144FC480057F715 /* AuthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C7092144FC480057F715 /* AuthLoginViewController.swift */; };
+		FF31C70C21450ADD0057F715 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C70B21450ADD0057F715 /* Injectable.swift */; };
 		FF6A6EB8213691E1009E6706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EB7213691E1009E6706 /* AppDelegate.swift */; };
 		FF6A6EBA213691E1009E6706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EB9213691E1009E6706 /* ViewController.swift */; };
 		FF6A6EBD213691E1009E6706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6A6EBB213691E1009E6706 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		FF31C7032144FA490057F715 /* AuthSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSignupViewController.swift; sourceTree = "<group>"; };
 		FF31C7072144FC3D0057F715 /* AuthLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthLogin.storyboard; sourceTree = "<group>"; };
 		FF31C7092144FC480057F715 /* AuthLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginViewController.swift; sourceTree = "<group>"; };
+		FF31C70B21450ADD0057F715 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		FF6A6EB4213691E1009E6706 /* TypesafeNavigationInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypesafeNavigationInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6A6EB7213691E1009E6706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6A6EB9213691E1009E6706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		FF6A6ECA2136923A009E6706 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FF31C70B21450ADD0057F715 /* Injectable.swift */,
 				FF6A6EB9213691E1009E6706 /* ViewController.swift */,
 				FF6A6EBB213691E1009E6706 /* Main.storyboard */,
 				FF6A6EE521369BB6009E6706 /* Auth */,
@@ -304,6 +307,7 @@
 				FF6A6EBA213691E1009E6706 /* ViewController.swift in Sources */,
 				FF6A6EB8213691E1009E6706 /* AppDelegate.swift in Sources */,
 				FF6A6EE421369B0A009E6706 /* AuthFlowInitials.swift in Sources */,
+				FF31C70C21450ADD0057F715 /* Injectable.swift in Sources */,
 				FF6A6EDE213696AA009E6706 /* AuthFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

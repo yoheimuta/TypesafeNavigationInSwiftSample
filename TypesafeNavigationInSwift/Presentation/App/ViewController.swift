@@ -8,14 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Injectable {
+    typealias Dependency = ThisDependency
     
     private var dep: Dependency!
-    struct Dependency {
+    struct ThisDependency {
         let flow: AuthFlowRoots
     }
     
-    static func make(dep: Dependency) -> ViewController {
+    static func make(dep: Dependency) -> UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
             as! ViewController
         vc.dep = dep

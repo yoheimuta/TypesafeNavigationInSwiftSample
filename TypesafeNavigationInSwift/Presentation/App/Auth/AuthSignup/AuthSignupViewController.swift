@@ -8,17 +8,19 @@
 
 import UIKit
 
-final class AuthSignupViewController: UIViewController {
+final class AuthSignupViewController: UIViewController, Injectable {
     @IBOutlet private var submitOutlet: UIButton!
     @IBOutlet private var forceBackOutlet: UIButton!
+    
+    typealias Dependency = ThisDependency
 
     private var dep: Dependency!
-    struct Dependency {
+    struct ThisDependency {
         let flow: AuthFlowSignups
         let closable: CloseTransitioning
     }
     
-    static func make(dep: Dependency) -> AuthSignupViewController {
+    static func make(dep: Dependency) -> UIViewController {
         let vc = UIStoryboard(name: "AuthSignup", bundle: nil).instantiateInitialViewController()
             as! AuthSignupViewController
         vc.dep = dep

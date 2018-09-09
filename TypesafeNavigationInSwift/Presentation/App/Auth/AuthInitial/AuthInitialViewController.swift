@@ -8,18 +8,20 @@
 
 import UIKit
 
-final class AuthInitialViewController: UIViewController {
+final class AuthInitialViewController: UIViewController, Injectable {
     @IBOutlet private var closeOutlet: UIBarButtonItem!
     @IBOutlet private var signupOutlet: UIButton!
     @IBOutlet private var loginOutlet: UIButton!
+   
+    typealias Dependency = ThisDependency
 
     private var dep: Dependency!
-    struct Dependency {
+    struct ThisDependency {
         let flow: AuthFlowInitials
         let closable: CloseTransitioning
     }
     
-    static func make(dep: Dependency) -> UINavigationController {
+    static func make(dep: Dependency) -> UIViewController {
         let nvc = UIStoryboard(name: "AuthInitial", bundle: nil).instantiateInitialViewController()
             as! UINavigationController
         let vc = nvc.topViewController as! AuthInitialViewController
