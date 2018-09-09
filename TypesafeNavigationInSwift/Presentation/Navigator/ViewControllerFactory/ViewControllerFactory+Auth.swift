@@ -19,10 +19,11 @@ extension ViewControllerFactory: AuthViewControllerFactories {
     }
     
     func makeSignup(_ flow: AuthFlowSignups) -> (UIViewController, Transitioning) {
-        let vc = AuthSignupViewController.make(dep: .init(
-            flow: flow
-        ))
         let trans = NavigationTransition()
+        let vc = AuthSignupViewController.make(dep: .init(
+            flow: flow,
+            closable: trans
+        ))
         return (vc, trans)
     }
     

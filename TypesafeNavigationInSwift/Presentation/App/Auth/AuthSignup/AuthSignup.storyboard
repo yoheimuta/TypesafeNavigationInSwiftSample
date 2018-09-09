@@ -19,11 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss8-pI-2nL">
-                                <rect key="frame" x="164" y="318" width="47" height="30"/>
+                                <rect key="frame" x="164" y="293" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="submit"/>
                                 <connections>
                                     <action selector="submitTapped:" destination="k8a-vg-q71" eventType="touchUpInside" id="02Y-Dv-2qW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wd-rb-Ioi">
+                                <rect key="frame" x="151" y="343" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="force back"/>
+                                <connections>
+                                    <action selector="forceBackTapped:" destination="k8a-vg-q71" eventType="touchUpInside" id="7iS-wL-jZ1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,6 +39,7 @@
                         <viewLayoutGuide key="safeArea" id="9ia-qc-77w"/>
                     </view>
                     <connections>
+                        <outlet property="forceBackOutlet" destination="0wd-rb-Ioi" id="rgL-JW-6nY"/>
                         <outlet property="submitOutlet" destination="Ss8-pI-2nL" id="cdp-ec-kwb"/>
                     </connections>
                 </viewController>
