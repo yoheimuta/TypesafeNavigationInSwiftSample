@@ -25,11 +25,11 @@
 		FF6A6ED821369481009E6706 /* AuthViewControllerFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED721369481009E6706 /* AuthViewControllerFactories.swift */; };
 		FF6A6EDA213694DC009E6706 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6ED9213694DC009E6706 /* ViewControllerFactory.swift */; };
 		FF6A6EDE213696AA009E6706 /* AuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EDD213696AA009E6706 /* AuthFlow.swift */; };
-		FF6A6EE221369AF8009E6706 /* AuthFlowRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE121369AF8009E6706 /* AuthFlowRoots.swift */; };
-		FF6A6EE421369B0A009E6706 /* AuthFlowInitials.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE321369B0A009E6706 /* AuthFlowInitials.swift */; };
+		FF6A6EE221369AF8009E6706 /* AuthFlowRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE121369AF8009E6706 /* AuthFlowRoot.swift */; };
+		FF6A6EE421369B0A009E6706 /* AuthFlowInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE321369B0A009E6706 /* AuthFlowInitial.swift */; };
 		FF6A6EE921369CCD009E6706 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EE821369CCD009E6706 /* Navigator.swift */; };
-		FF6A6EEC21369F57009E6706 /* AuthFlowSignups.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EEB21369F57009E6706 /* AuthFlowSignups.swift */; };
-		FF6A6EEE21369F60009E6706 /* AuthFlowLogins.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EED21369F60009E6706 /* AuthFlowLogins.swift */; };
+		FF6A6EEC21369F57009E6706 /* AuthFlowSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EEB21369F57009E6706 /* AuthFlowSignup.swift */; };
+		FF6A6EEE21369F60009E6706 /* AuthFlowLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EED21369F60009E6706 /* AuthFlowLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,11 +53,11 @@
 		FF6A6ED721369481009E6706 /* AuthViewControllerFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerFactories.swift; sourceTree = "<group>"; };
 		FF6A6ED9213694DC009E6706 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		FF6A6EDD213696AA009E6706 /* AuthFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlow.swift; sourceTree = "<group>"; };
-		FF6A6EE121369AF8009E6706 /* AuthFlowRoots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowRoots.swift; sourceTree = "<group>"; };
-		FF6A6EE321369B0A009E6706 /* AuthFlowInitials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowInitials.swift; sourceTree = "<group>"; };
+		FF6A6EE121369AF8009E6706 /* AuthFlowRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowRoot.swift; sourceTree = "<group>"; };
+		FF6A6EE321369B0A009E6706 /* AuthFlowInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowInitial.swift; sourceTree = "<group>"; };
 		FF6A6EE821369CCD009E6706 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
-		FF6A6EEB21369F57009E6706 /* AuthFlowSignups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowSignups.swift; sourceTree = "<group>"; };
-		FF6A6EED21369F60009E6706 /* AuthFlowLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowLogins.swift; sourceTree = "<group>"; };
+		FF6A6EEB21369F57009E6706 /* AuthFlowSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowSignup.swift; sourceTree = "<group>"; };
+		FF6A6EED21369F60009E6706 /* AuthFlowLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				FF6A6EDD213696AA009E6706 /* AuthFlow.swift */,
-				FF6A6EE121369AF8009E6706 /* AuthFlowRoots.swift */,
-				FF6A6EE321369B0A009E6706 /* AuthFlowInitials.swift */,
-				FF6A6EEB21369F57009E6706 /* AuthFlowSignups.swift */,
-				FF6A6EED21369F60009E6706 /* AuthFlowLogins.swift */,
+				FF6A6EE121369AF8009E6706 /* AuthFlowRoot.swift */,
+				FF6A6EE321369B0A009E6706 /* AuthFlowInitial.swift */,
+				FF6A6EEB21369F57009E6706 /* AuthFlowSignup.swift */,
+				FF6A6EED21369F60009E6706 /* AuthFlowLogin.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -293,17 +293,17 @@
 				FF31C70A2144FC480057F715 /* AuthLoginViewController.swift in Sources */,
 				FF6A6EDA213694DC009E6706 /* ViewControllerFactory.swift in Sources */,
 				FF6A6ED821369481009E6706 /* AuthViewControllerFactories.swift in Sources */,
-				FF6A6EEC21369F57009E6706 /* AuthFlowSignups.swift in Sources */,
+				FF6A6EEC21369F57009E6706 /* AuthFlowSignup.swift in Sources */,
 				FF31C6FC2144ED8F0057F715 /* ViewControllerFactory+Auth.swift in Sources */,
-				FF6A6EE221369AF8009E6706 /* AuthFlowRoots.swift in Sources */,
-				FF6A6EEE21369F60009E6706 /* AuthFlowLogins.swift in Sources */,
+				FF6A6EE221369AF8009E6706 /* AuthFlowRoot.swift in Sources */,
+				FF6A6EEE21369F60009E6706 /* AuthFlowLogin.swift in Sources */,
 				FF6A6ED2213692CF009E6706 /* ModalTransition.swift in Sources */,
 				FF31C7002144EEB70057F715 /* AuthInitialViewController.swift in Sources */,
 				FF6A6EE921369CCD009E6706 /* Navigator.swift in Sources */,
 				FF6A6ED0213692BA009E6706 /* Transitioning.swift in Sources */,
 				FF6A6EBA213691E1009E6706 /* ViewController.swift in Sources */,
 				FF6A6EB8213691E1009E6706 /* AppDelegate.swift in Sources */,
-				FF6A6EE421369B0A009E6706 /* AuthFlowInitials.swift in Sources */,
+				FF6A6EE421369B0A009E6706 /* AuthFlowInitial.swift in Sources */,
 				FF6A6EDE213696AA009E6706 /* AuthFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

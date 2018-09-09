@@ -15,7 +15,7 @@ final class Navigator {
     }
     
     func startAuthFlow(complete: @escaping AuthFlow.CompleteCallback)
-        -> AuthFlowRoots {
+        -> AuthFlowRoot {
         return AuthFlow.initialState(dep: .init(
             factory: factory,
             complete: complete

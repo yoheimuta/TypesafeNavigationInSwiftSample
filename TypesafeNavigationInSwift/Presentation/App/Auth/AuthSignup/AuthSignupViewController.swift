@@ -14,7 +14,7 @@ final class AuthSignupViewController: UIViewController {
 
     private var dep: Dependency!
     struct Dependency {
-        let flow: AuthFlowSignups
+        let flow: AuthFlowSignup
         let closable: CloseTransitioning
     }
     

@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     private var dep: Dependency!
     struct Dependency {
-        let flow: AuthFlowRoots
+        let flow: AuthFlowRoot
     }
     
     static func make(dep: Dependency) -> ViewController {

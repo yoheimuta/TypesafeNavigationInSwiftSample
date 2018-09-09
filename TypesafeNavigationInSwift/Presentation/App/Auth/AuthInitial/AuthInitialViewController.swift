@@ -15,7 +15,7 @@ final class AuthInitialViewController: UIViewController {
 
     private var dep: Dependency!
     struct Dependency {
-        let flow: AuthFlowInitials
+        let flow: AuthFlowInitial
         let closable: CloseTransitioning
     }
     
