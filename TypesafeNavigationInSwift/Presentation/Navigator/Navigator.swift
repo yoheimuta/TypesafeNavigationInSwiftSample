@@ -9,8 +9,10 @@
 import Foundation
 
 final class Navigator {
-    private let factory: ViewControllerFactory
-    init(_ factory: ViewControllerFactory) {
+    typealias ViewControllerFactories = AuthViewControllerFactories
+    
+    private let factory: ViewControllerFactories
+    init(_ factory: ViewControllerFactories) {
         self.factory = factory
     }
     
