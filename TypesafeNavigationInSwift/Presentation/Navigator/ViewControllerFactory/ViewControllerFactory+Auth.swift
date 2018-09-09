@@ -9,7 +9,7 @@
 import UIKit
 
 extension ViewControllerFactory: AuthViewControllerFactories {
-    func makeInitial(_ flow: AuthFlowInitial) -> (UIViewController, Transitioning) {
+    func makeInitial(_ flow: AuthFlowInitials) -> (UIViewController, Transitioning) {
         let trans = ModalTransition()
         let vc = AuthInitialViewController.make(dep: .init(
             flow: flow,
@@ -18,7 +18,7 @@ extension ViewControllerFactory: AuthViewControllerFactories {
         return (vc, trans)
     }
     
-    func makeSignup(_ flow: AuthFlowSignup) -> (UIViewController, Transitioning) {
+    func makeSignup(_ flow: AuthFlowSignups) -> (UIViewController, Transitioning) {
         let trans = NavigationTransition()
         let vc = AuthSignupViewController.make(dep: .init(
             flow: flow,
@@ -27,7 +27,7 @@ extension ViewControllerFactory: AuthViewControllerFactories {
         return (vc, trans)
     }
     
-    func makeLogin(_ flow: AuthFlowLogin) -> (UIViewController, Transitioning) {
+    func makeLogin(_ flow: AuthFlowLogins) -> (UIViewController, Transitioning) {
         let vc = AuthLoginViewController.make(dep: .init(
             flow: flow
         ))

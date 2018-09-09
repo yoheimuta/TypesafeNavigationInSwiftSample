@@ -13,7 +13,7 @@ final class AuthLoginViewController: UIViewController {
     
     private var dep: Dependency!
     struct Dependency {
-        let flow: AuthFlowLogin
+        let flow: AuthFlowLogins
     }
     
     static func make(dep: Dependency) -> AuthLoginViewController {

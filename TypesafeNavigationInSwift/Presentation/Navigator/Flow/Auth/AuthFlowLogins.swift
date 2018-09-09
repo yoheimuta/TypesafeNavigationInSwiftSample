@@ -1,5 +1,5 @@
 //
-//  AuthFlowInitial.swift
+//  AuthFlowLogins.swift
 //  TypesafeNavigationInSwift
 //
 //  Created by YOSHIMUTA YOHEI on 2018/08/29.
@@ -8,7 +8,6 @@
 
 import UIKit
 
-protocol AuthFlowInitial {
-    func toSignup(_ src: UIViewController)
-    func toLogin(_ src: UIViewController)
+protocol AuthFlowLogins {
+    func toComplete(_ src: UIViewController)
 }

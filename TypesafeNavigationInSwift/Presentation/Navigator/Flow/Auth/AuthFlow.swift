@@ -20,19 +20,19 @@ struct AuthFlow {
         self.dep = dep
     }
 
-    static func initialState(dep: Dependency) -> AuthFlowRoot {
+    static func initialState(dep: Dependency) -> AuthFlowRoots {
         return AuthFlow(dep)
     }
 }
 
-extension AuthFlow: AuthFlowRoot {
+extension AuthFlow: AuthFlowRoots {
     func toInitial(_ src: UIViewController) {
         let (dst, transition) = dep.factory.makeInitial(self)
         transition.open(src, dst)
     }
 }
 
-extension AuthFlow: AuthFlowInitial {
+extension AuthFlow: AuthFlowInitials {
     func toSignup(_ src: UIViewController) {
         let (dst, transition) = dep.factory.makeSignup(self)
         transition.open(src, dst)
@@ -44,7 +44,7 @@ extension AuthFlow: AuthFlowInitial {
     }
 }
 
-extension AuthFlow: AuthFlowSignup, AuthFlowLogin {
+extension AuthFlow: AuthFlowSignups, AuthFlowLogins {
     func toComplete(_ src: UIViewController) {
         let transition = dep.factory.makeComplete()
         transition.close(src)

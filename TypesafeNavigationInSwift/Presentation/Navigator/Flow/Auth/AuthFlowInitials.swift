@@ -1,5 +1,5 @@
 //
-//  AuthFlowRoot.swift
+//  AuthFlowInitials.swift
 //  TypesafeNavigationInSwift
 //
 //  Created by YOSHIMUTA YOHEI on 2018/08/29.
@@ -8,6 +8,7 @@
 
 import UIKit
 
-protocol AuthFlowRoot {
-    func toInitial(_ src: UIViewController)
+protocol AuthFlowInitials {
+    func toSignup(_ src: UIViewController)
+    func toLogin(_ src: UIViewController)
 }
