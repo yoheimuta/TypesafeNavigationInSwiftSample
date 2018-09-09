@@ -6,24 +6,6 @@
 //  Copyright © 2018年 YOSHIMUTA YOHEI. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 final class ViewControllerFactory {}
-
-extension ViewControllerFactory: AuthViewControllerFactories {
-    func makeInitial() -> (UIViewController, Transitioning) {
-        return (UIViewController(), ModalTransition())
-    }
-    
-    func makeSignup() -> (UIViewController, Transitioning) {
-        return (UIViewController(), NavigationTransition())
-    }
-    
-    func makeLogin() -> (UIViewController, Transitioning) {
-        return (UIViewController(), NavigationTransition())
-    }
-    
-    func makeEnd() -> Transitioning {
-        return ModalTransition()
-    }
-}

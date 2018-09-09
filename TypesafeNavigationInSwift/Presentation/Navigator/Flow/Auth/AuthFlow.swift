@@ -22,7 +22,7 @@ struct AuthFlow {
 
 extension AuthFlow: AuthFlowRoots {
     func toInitial(_ src: UIViewController) {
-        let (dst, transition) = factory.makeInitial()
+        let (dst, transition) = factory.makeInitial(self)
         transition.open(src, dst)
     }
 }
