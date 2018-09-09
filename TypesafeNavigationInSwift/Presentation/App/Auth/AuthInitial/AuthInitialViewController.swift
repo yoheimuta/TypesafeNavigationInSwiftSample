@@ -11,6 +11,7 @@ import UIKit
 final class AuthInitialViewController: UIViewController {
     @IBOutlet private var closeOutlet: UIBarButtonItem!
     @IBOutlet private var signupOutlet: UIButton!
+    @IBOutlet private var loginOutlet: UIButton!
 
     private var dep: Dependency!
     struct Dependency {
@@ -32,6 +33,10 @@ final class AuthInitialViewController: UIViewController {
     
     @IBAction func closeTapped(_ sender: AnyObject) {
         dep.closable.close(self)
+    }
+    
+    @IBAction func signupTapped(_ sender: AnyObject) {
+        dep.flow.toSignup(self)
     }
     
     @IBAction func loginTapped(_ sender: AnyObject) {

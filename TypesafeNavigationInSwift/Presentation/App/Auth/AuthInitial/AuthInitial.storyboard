@@ -19,11 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDj-Be-FDv">
-                                <rect key="frame" x="164" y="308" width="46" height="30"/>
+                                <rect key="frame" x="164" y="288" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="signup"/>
                                 <connections>
-                                    <action selector="loginTapped:" destination="BLm-lq-KaT" eventType="touchUpInside" id="b4c-8q-U3j"/>
+                                    <action selector="signupTapped:" destination="BLm-lq-KaT" eventType="touchUpInside" id="CeB-hj-PJB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5R-8M-MZa">
+                                <rect key="frame" x="170" y="348" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BLm-lq-KaT" eventType="touchUpInside" id="ve7-Rw-pxI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,7 +47,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="closeOutlet" destination="F1b-iz-0cQ" id="JAN-yY-3oM"/>
-                        <outlet property="signupOutlet" destination="gDj-Be-FDv" id="7eu-QO-VSv"/>
+                        <outlet property="loginOutlet" destination="H5R-8M-MZa" id="VvJ-bo-d8c"/>
+                        <outlet property="signupOutlet" destination="gDj-Be-FDv" id="MFL-mM-UIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kwz-NE-B6L" userLabel="First Responder" sceneMemberID="firstResponder"/>

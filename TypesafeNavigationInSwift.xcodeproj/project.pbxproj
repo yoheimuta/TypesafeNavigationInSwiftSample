@@ -10,6 +10,10 @@
 		FF31C6FC2144ED8F0057F715 /* ViewControllerFactory+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C6FB2144ED8F0057F715 /* ViewControllerFactory+Auth.swift */; };
 		FF31C6FE2144EEA80057F715 /* AuthInitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF31C6FD2144EEA80057F715 /* AuthInitial.storyboard */; };
 		FF31C7002144EEB70057F715 /* AuthInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C6FF2144EEB70057F715 /* AuthInitialViewController.swift */; };
+		FF31C7022144FA3A0057F715 /* AuthSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF31C7012144FA3A0057F715 /* AuthSignup.storyboard */; };
+		FF31C7042144FA490057F715 /* AuthSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C7032144FA490057F715 /* AuthSignupViewController.swift */; };
+		FF31C7082144FC3D0057F715 /* AuthLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF31C7072144FC3D0057F715 /* AuthLogin.storyboard */; };
+		FF31C70A2144FC480057F715 /* AuthLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31C7092144FC480057F715 /* AuthLoginViewController.swift */; };
 		FF6A6EB8213691E1009E6706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EB7213691E1009E6706 /* AppDelegate.swift */; };
 		FF6A6EBA213691E1009E6706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A6EB9213691E1009E6706 /* ViewController.swift */; };
 		FF6A6EBD213691E1009E6706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6A6EBB213691E1009E6706 /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		FF31C6FB2144ED8F0057F715 /* ViewControllerFactory+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerFactory+Auth.swift"; sourceTree = "<group>"; };
 		FF31C6FD2144EEA80057F715 /* AuthInitial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthInitial.storyboard; sourceTree = "<group>"; };
 		FF31C6FF2144EEB70057F715 /* AuthInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInitialViewController.swift; sourceTree = "<group>"; };
+		FF31C7012144FA3A0057F715 /* AuthSignup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthSignup.storyboard; sourceTree = "<group>"; };
+		FF31C7032144FA490057F715 /* AuthSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSignupViewController.swift; sourceTree = "<group>"; };
+		FF31C7072144FC3D0057F715 /* AuthLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthLogin.storyboard; sourceTree = "<group>"; };
+		FF31C7092144FC480057F715 /* AuthLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginViewController.swift; sourceTree = "<group>"; };
 		FF6A6EB4213691E1009E6706 /* TypesafeNavigationInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypesafeNavigationInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6A6EB7213691E1009E6706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6A6EB9213691E1009E6706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 		FF6A6EE721369C1C009E6706 /* AuthSignup */ = {
 			isa = PBXGroup;
 			children = (
+				FF31C7012144FA3A0057F715 /* AuthSignup.storyboard */,
+				FF31C7032144FA490057F715 /* AuthSignupViewController.swift */,
 			);
 			path = AuthSignup;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 		FF6A6EEA21369EC0009E6706 /* AuthLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FF31C7072144FC3D0057F715 /* AuthLogin.storyboard */,
+				FF31C7092144FC480057F715 /* AuthLoginViewController.swift */,
 			);
 			path = AuthLogin;
 			sourceTree = "<group>";
@@ -262,8 +274,10 @@
 			files = (
 				FF6A6EC2213691E3009E6706 /* LaunchScreen.storyboard in Resources */,
 				FF31C6FE2144EEA80057F715 /* AuthInitial.storyboard in Resources */,
+				FF31C7082144FC3D0057F715 /* AuthLogin.storyboard in Resources */,
 				FF6A6EBF213691E3009E6706 /* Assets.xcassets in Resources */,
 				FF6A6EBD213691E1009E6706 /* Main.storyboard in Resources */,
+				FF31C7022144FA3A0057F715 /* AuthSignup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF31C7042144FA490057F715 /* AuthSignupViewController.swift in Sources */,
 				FF6A6ED4213692DA009E6706 /* NavigationTransition.swift in Sources */,
+				FF31C70A2144FC480057F715 /* AuthLoginViewController.swift in Sources */,
 				FF6A6EDA213694DC009E6706 /* ViewControllerFactory.swift in Sources */,
 				FF6A6ED821369481009E6706 /* AuthViewControllerFactories.swift in Sources */,
 				FF6A6EEC21369F57009E6706 /* AuthFlowSignups.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 protocol AuthViewControllerFactories {
     func makeInitial(_ flow: AuthFlowInitials) -> (UIViewController, Transitioning)
-    func makeSignup() -> (UIViewController, Transitioning)
-    func makeLogin() -> (UIViewController, Transitioning)
+    func makeSignup(_ flow: AuthFlowSignups) -> (UIViewController, Transitioning)
+    func makeLogin(_ flow: AuthFlowLogins) -> (UIViewController, Transitioning)
     func makeEnd() -> Transitioning
 }

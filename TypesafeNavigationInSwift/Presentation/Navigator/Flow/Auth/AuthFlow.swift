@@ -29,12 +29,12 @@ extension AuthFlow: AuthFlowRoots {
 
 extension AuthFlow: AuthFlowInitials {
     func toSignup(_ src: UIViewController) {
-        let (dst, transition) = factory.makeSignup()
+        let (dst, transition) = factory.makeSignup(self)
         transition.open(src, dst)
     }
     
     func toLogin(_ src: UIViewController) {
-        let (dst, transition) = factory.makeLogin()
+        let (dst, transition) = factory.makeLogin(self)
         transition.open(src, dst)
     }
 }
