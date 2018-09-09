@@ -35,7 +35,7 @@ extension ViewControllerFactory: AuthViewControllerFactories {
         return (vc, trans)
     }
     
-    func makeEnd() -> Transitioning {
+    func makeComplete() -> Transitioning {
         return ModalTransition()
     }
 }

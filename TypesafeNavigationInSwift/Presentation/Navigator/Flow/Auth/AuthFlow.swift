@@ -45,8 +45,8 @@ extension AuthFlow: AuthFlowInitials {
 }
 
 extension AuthFlow: AuthFlowSignups, AuthFlowLogins {
-    func toEnd(_ src: UIViewController) {
-        let transition = dep.factory.makeEnd()
+    func toComplete(_ src: UIViewController) {
+        let transition = dep.factory.makeComplete()
         transition.close(src)
         
         dep.complete()

@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            // ex. Display the auth view when an user is needed to authenticate.
             self?.dep.flow.toInitial(self!)
         }
     }

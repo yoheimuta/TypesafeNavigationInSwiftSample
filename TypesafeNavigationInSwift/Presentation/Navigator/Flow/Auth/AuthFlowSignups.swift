@@ -9,5 +9,5 @@
 import UIKit
 
 protocol AuthFlowSignups {
-    func toEnd(_ src: UIViewController)
+    func toComplete(_ src: UIViewController)
 }

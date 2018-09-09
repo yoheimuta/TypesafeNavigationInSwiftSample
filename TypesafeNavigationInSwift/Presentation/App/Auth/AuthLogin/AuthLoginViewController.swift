@@ -28,6 +28,6 @@ final class AuthLoginViewController: UIViewController {
     }
     
     @IBAction func submitTapped(_ sender: AnyObject) {
-        dep.flow.toEnd(self)
+        dep.flow.toComplete(self)
     }
 }
